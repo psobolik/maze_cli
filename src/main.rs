@@ -14,9 +14,9 @@ struct Args {
     rows: u32,
 }
 
-static WALL_CHAR: &'static str = "▏";
-static FLOOR_CHAR: &'static str = "_";
-static PASSAGE_CHAR: &'static str = " ";
+static WALL_CHAR: &str = "▏";
+static FLOOR_CHAR: &str = "_";
+static PASSAGE_CHAR: &str = " ";
 
 fn main() {
     let args = Args::parse();
