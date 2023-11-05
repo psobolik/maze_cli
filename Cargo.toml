@@ -6,5 +6,5 @@ authors = ["Paul Sobolik <psobolik@zoho.com>"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-maze_lib = { path = "../maze_lib" }
+maze_lib = { path = "./maze_lib" }
 clap = { version = "4.4", features = ["derive"] }
