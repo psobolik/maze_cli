@@ -1,9 +1,9 @@
 use clap::Parser;
-use maze_lib::maze_generator;
 use maze_lib::maze::cell::Cell;
 use maze_lib::maze::cell_edge::CellEdge;
 use maze_lib::maze::coordinates::Coordinates;
 use maze_lib::maze::direction::Direction;
+use maze_lib::maze_generator;
 
 #[derive(Parser)]
 #[command(version)]
@@ -14,7 +14,7 @@ struct Args {
     rows: u32,
 }
 
-static WALL_CHAR: &str = "▏";
+static WALL_CHAR: &str = "|";
 static FLOOR_CHAR: &str = "_";
 static PASSAGE_CHAR: &str = " ";
 
@@ -57,5 +57,3 @@ fn print_cell(cell: Cell) {
         }
     }
 }
-
-
